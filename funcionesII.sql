@@ -404,3 +404,85 @@ begin
     return estring;
 end //
 delimiter ;
+
+
+
+/*---------------EJERCICIOS CURSORES Y PROCEDIMIENTOS--------------------------*/
+#1 Crear un SP que liste todos los productos que tengan un precio de compra mayor al precio
+#promedio y que devuelva la cantidad de productos que cumplan con esa condición.
+delimiter //
+create procedure lista(out cantidad int)
+begin
+	declare promedio int;
+	select avg(priceEach) into promedio  
+    from orderdetails;
+    select * from products where buyPrice>promedio;
+    select count(*) into cantidad from products where buyPrice>promedio;
+end //
+delimiter ;
+		
+call lista (@variable);
+select @variable;
+
+
+#2 Crear un SP que reciba un orderNumber y la borre. 
+#Previamente debe eliminar todos los ítems de la tabla orderDetails asociados a él.
+#Tiene que devolver 0 si no encontró filas para ese orderNumber,
+#o la cantidad ítems borrados si encontró el orderNumber.
+
+delimiter //
+create procedure eliminar(out numorden int)
+begin
+	declare extra int default 0;
+	delete from orderdetails where numorden = orderNumber;
+    if (numorden is null) then
+		select extra;
+    else
+		select count(numorden) from orderdetails;
+        end if;
+	end //
+delimiter ;
+
+
+#3 Crear un SP que borre una línea de productos de la tabla Productlines. 
+#Tenga en cuenta que la línea de productos no podrá ser borrada si tiene 
+#productos asociados. El procedure debe devolver un mensaje.
+
+delimiter //
+create procedure borrar(in lineaproducto text)
+begin 
+	declare variable text;
+    select * into variable from products where products.productName is not null;
+    delete from products where variable = products.productLine;
+end //
+delimiter ;    
+
+call borrar (@variable);
+select @variable;
+
+#4 Realizar un SP que liste la cantidad de órdenes que hay por estado.
+
+delimiter //
+create procedure listar(in cantOrdenes int)
+begin
+	declare variable int;
+    select estado.status, count(*) from orders where estado = orders.status
+    group by status; 
+end //
+delimiter ;
+    
+call listar(@variable);
+select @variable;
+
+-- ----------------CURSORES Y PROCEDIMIENTOS-------------------------- --
+#9 Crear un SP que utilice un cursor para recorrer la tabla de offices y que genere 
+#una lista con las ciudades en las cuales hay oficinas. La lista tendrá que 
+#devolverse en un parámetro de salida VARCHAR(4000) que contenga todas las ciudades 
+#separadas por coma getCiudadesOffices().
+
+delimiter //
+create procedure listota(in ciudad text)
+begin
+	declare hayOficina boolean default 1;
+    declare lista varchar(4000) default "" ;
+    
