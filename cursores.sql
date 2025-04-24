@@ -5,7 +5,7 @@
 
 USE cursores;
 
-/* Drop existing tables  */
+/* Drop existing tables  */qué se celebra el 15 de abril
 DROP TABLE IF EXISTS productlines;
 DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS offices;
