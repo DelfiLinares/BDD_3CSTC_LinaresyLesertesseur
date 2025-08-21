@@ -1,0 +1,24 @@
+---------------------- EJERCICIO 1 ----------------------
+db.usuarios.find({nombre: "Tito"})
+{ _id: ObjectId("689df8a2b83e9d060551e944"), nombre: 'Tito' }
+
+---------------------- EJERCICIO 2 ----------------------
+
+db.usuarios.find( {edad: {$gt : 25}}, {nombre:1, apellido:1, _id:0} )
+
+---------------------- EJERCICIO 3 ----------------------
+
+
+db.usuarios.find({compras : {$size : 2}}, {nombre:1, mail:1})
+
+
+---------------------- EJERCICIO 4 ----------------------
+
+db.usuarios.find({} {"compras.monto":1}})
+
+---------------------- EJERCICIO 5 ----------------------
+
+a
+
+---------------------- EJERCICIO 6 ----------------------
+

@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "689df8a2b83e9d060551e944"
+  },
+  "nombre": "Tito"
+},{
+  "_id": {
+    "$oid": "689df97bb83e9d060551e945"
+  },
+  "nombre": "Monica"
+},{
+  "_id": 1,
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "edad": 28,
+  "mail": "juan.perez@example.com",
+  "compras": [
+    {
+      "id_compra": 1,
+      "monto": 120.5,
+      "productos": [
+        "laptop",
+        "mouse",
+        "teclado"
+      ]
+    },
+    {
+      "id_compra": 2,
+      "monto": 15,
+      "productos": [
+        "cuaderno"
+      ]
+    },
+    {
+      "id_compra": 3,
+      "monto": 200,
+      "productos": [
+        "celular",
+        "funda",
+        "cargador",
+        "auriculares"
+      ]
+    }
+  ]
+},{
+  "_id": 2,
+  "nombre": "María",
+  "apellido": "Gómez",
+  "edad": 22,
+  "mail": "maria.gomez@example.com",
+  "compras": [
+    {
+      "id_compra": 4,
+      "monto": 300,
+      "productos": [
+        "televisor",
+        "soporte",
+        "hdmi",
+        "control remoto"
+      ]
+    },
+    {
+      "id_compra": 5,
+      "monto": 25.5,
+      "productos": [
+        "libro",
+        "agenda"
+      ]
+    }
+  ]
+},{
+  "_id": 3,
+  "nombre": "Lucas",
+  "apellido": "Martínez",
+  "edad": 35,
+  "mail": "lucas.martinez@example.com",
+  "compras": [
+    {
+      "id_compra": 6,
+      "monto": 50,
+      "productos": [
+        "mousepad"
+      ]
+    },
+    {
+      "id_compra": 7,
+      "monto": 90,
+      "productos": [
+        "cafetera",
+        "tazas",
+        "filtros",
+        "azúcar",
+        "café",
+        "leche"
+      ]
+    }
+  ]
+},{
+  "_id": 4,
+  "nombre": "Sofía",
+  "apellido": "Fernández",
+  "edad": 40,
+  "mail": "sofia.fernandez@example.com",
+  "compras": [
+    {
+      "id_compra": 8,
+      "monto": 500,
+      "productos": [
+        "heladera",
+        "freezer",
+        "organizador",
+        "luz LED",
+        "termostato",
+        "filtro de agua"
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "68a70af4004d6c2c704fc5ad"
+  },
+  "nombre": "Albano",
+  "Apellido": "Fazzito",
+  "Edad": 18,
+  "mail": "frankFabra@gmail.com.co",
+  "compras": [
+    {
+      "id_compra": 9,
+      "monto": 40,
+      "productos": [
+        "Pelota",
+        "Polenta"
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "68a7116c004d6c2c704fc5ae"
+  }
+}]
