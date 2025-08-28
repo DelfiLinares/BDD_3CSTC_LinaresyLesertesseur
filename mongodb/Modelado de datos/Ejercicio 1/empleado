@@ -1,0 +1,25 @@
+[{
+  "_id": "68b03f97919817b768d15fc4",
+  "nombre": "Rodrigo",
+  "apellido": "Vagoneta",
+  "email": "rodriVago@gmail.com",
+  "fechaNacimiento": "1985-05-02",
+  "puesto": "Gerente",
+  "carnet": {
+    "numSerie": 1,
+    "fechaEmision": "2025-04-04",
+    "fechaVencimiento": "2028-04-04"
+  }
+},{
+  "_id": "68b041a8919817b768d15fc6",
+  "nombre": "Valeria",
+  "apellido": "Cimino",
+  "email": "valechu@gmail.com",
+  "fechaNacimiento": "2009-08-25",
+  "puesto": "Jefe de proyecto",
+  "carnet": {
+    "numSerie": 2,
+    "fechaEmision": "2024-04-04",
+    "fechaVencimiento": "2026-04-04"
+  }
+}]
