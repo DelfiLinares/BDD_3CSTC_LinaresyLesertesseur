@@ -1,0 +1,21 @@
+[{
+  "_id": "68b044bd919817b768d15fc8",
+  "nombre": "Santino",
+  "apellido": "Vuotto",
+  "email": "san@gmail.com",
+  "clave": "Boca0912",
+  "direccionesEntrega": [
+    {
+      "calle": "carlos antonio lopez",
+      "ciudad": "CABA",
+      "codigoPostal": "VT9",
+      "provincia": "Buenos Aires"
+    },
+    {
+      "calle": "El fuerte",
+      "ciudad": "CABA",
+      "codigoPostal": "NP2",
+      "provincia": "Buenos Aires"
+    }
+  ]
+}]
