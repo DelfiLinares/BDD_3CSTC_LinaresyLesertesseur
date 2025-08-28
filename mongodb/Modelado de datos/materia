@@ -1,0 +1,27 @@
+[{
+  "_id": "68b06877f096b1549ef58410",
+  "nombre": "Filosofía",
+  "codigo": "FF2",
+  "horas": 2,
+  "profesores": [
+    {
+      "_id": "68b067fef096b1549ef5840b",
+      "nombre": "Nahun",
+      "apellido": "De La Cuesta",
+      "email": "naju432@gmail.com"
+    }
+  ]
+},{
+  "_id": "68b066d9f096b1549ef58404",
+  "nombre": "Base de datos",
+  "codigo": "BDD4",
+  "horas": 4,
+  "profesores": [
+    {
+      "_id": "68b0678ef096b1549ef58409",
+      "nombre": "Magali",
+      "apellido": "Cristobo",
+      "email": "magaliC@gmail.com"
+    }
+  ]
+}]
