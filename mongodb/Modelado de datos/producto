@@ -1,0 +1,17 @@
+[{
+  "_id": "68b05a96f096b1549ef583e2",
+  "nombre": "Leche condensada",
+  "precioUnitario": 500
+},{
+  "_id": "68b05ae4f096b1549ef583e6",
+  "nombre": "Agua mineral",
+  "precioUnitario": 300
+},{
+  "_id": "68b05b04f096b1549ef583e8",
+  "nombre": "Alfajor Rasta",
+  "precioUnitario": 1300
+},{
+  "_id": "68b05e9ff096b1549ef583e9",
+  "nombre": "Cono relleno",
+  "precioUnitario": 1300
+}]

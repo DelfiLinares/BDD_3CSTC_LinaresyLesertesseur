@@ -1,0 +1,21 @@
+[{
+  "_id": "68b059abf096b1549ef583db",
+  "cant": 3,
+  "montoTotal": 5000,
+  "idUsuario": "68b05823f096b1549ef583d5",
+  "fecha": "2025-03-09",
+  "productos": [
+    "68b05a96f096b1549ef583e2"
+  ]
+},{
+  "_id": "68b05f82f096b1549ef583ef",
+  "cant": 3,
+  "montoTotal": 5000,
+  "idUsuario": "68b05823f096b1549ef583d5",
+  "fecha": "2025-03-09",
+  "productos": [
+    "68b05a96f096b1549ef583e2",
+    "68b05b04f096b1549ef583e8",
+    "68b05ae4f096b1549ef583e6"
+  ]
+}]

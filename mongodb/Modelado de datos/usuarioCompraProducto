@@ -1,0 +1,19 @@
+[{
+  "_id": "68b05823f096b1549ef583d5",
+  "nombre": "Monica",
+  "apellido": "Spuven",
+  "email": "spuven@gmail.com",
+  "clave": "nsr"
+},{
+  "_id": "68b05898f096b1549ef583d7",
+  "nombre": "Charlotte",
+  "apellido": "Aichtinson",
+  "email": "charlixcx@gmail.com",
+  "clave": "guess2025"
+},{
+  "_id": "68b05951f096b1549ef583d9",
+  "nombre": "Tyler",
+  "apellido": "Lyle",
+  "email": "theMidnight@gmail.com",
+  "clave": "daysOfThunder"
+}]
