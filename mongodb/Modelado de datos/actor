@@ -1,0 +1,19 @@
+[{
+  "_id": "68b062a0f096b1549ef583f6",
+  "nombre": "Vin",
+  "apellido": "Diesel",
+  "nacimiento": "1988-05-05",
+  "nacionalidad": "estadounidense"
+},{
+  "_id": "68b06338f096b1549ef583f7",
+  "nombre": "Tom",
+  "apellido": "Cruise",
+  "nacimiento": "1968-04-13",
+  "nacionalidad": "estadounidense"
+},{
+  "_id": "68b06385f096b1549ef583f9",
+  "nombre": "Franco",
+  "apellido": "Callipo",
+  "nacimiento": "1998-04-13",
+  "nacionalidad": "argentino"
+}]
