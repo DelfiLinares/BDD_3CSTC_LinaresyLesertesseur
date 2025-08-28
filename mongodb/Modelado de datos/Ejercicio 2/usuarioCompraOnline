@@ -18,4 +18,24 @@
       "provincia": "Buenos Aires"
     }
   ]
+},{
+  "_id": "68b04d56f096b1549ef583a5",
+  "nombre": "Ezequiel",
+  "apellido": "Gonzales",
+  "email": "ezequielCGonzales@gmail.com",
+  "clave": "mora2570",
+  "direccionesEntrega": [
+    {
+      "calle": "Manzana 13",
+      "ciudad": "Pablo Podesta",
+      "codigoPostal": "PD4",
+      "provincia": "Buenos Aires"
+    },
+    {
+      "calle": "Estanislao 5670",
+      "ciudad": "CABA",
+      "codigoPostal": "EZ4",
+      "provincia": "Buenos Aires"
+    }
+  ]
 }]

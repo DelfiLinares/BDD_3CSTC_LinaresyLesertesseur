@@ -1,0 +1,45 @@
+[{
+  "_id": "68b04d00f096b1549ef583a3",
+  "calle": "carlos antonio lopez",
+  "ciudad": "CABA",
+  "codigoPostal": "VT9",
+  "provincia": "Buenos Aires",
+  "usuarioCompraOnline": {
+    "_id": "68b044bd919817b768d15fc8",
+    "nombre": "Santino",
+    "apellido": "Vuotto"
+  }
+},{
+  "_id": "68b04eb2f096b1549ef583b2",
+  "calle": "El fuerte",
+  "ciudad": "CABA",
+  "codigoPostal": "NP2",
+  "provincia": "Buenos Aires",
+  "usuarioCompraOnline": {
+    "_id": "68b044bd919817b768d15fc8",
+    "nombre": "Santino",
+    "apellido": "Vuotto"
+  }
+},{
+  "_id": "68b04faff096b1549ef583b6",
+  "calle": "Manzana 13",
+  "ciudad": "Pablo Podesta",
+  "codigoPostal": "PD4",
+  "provincia": "Buenos Aires",
+  "usuarioCompraOnline": {
+    "_id": "68b04d56f096b1549ef583a5",
+    "nombre": "Ezequiel",
+    "apellido": "Gonzales"
+  }
+},{
+  "_id": "68b05143f096b1549ef583be",
+  "calle": "Estanislao 5670",
+  "ciudad": "CABA",
+  "codigoPostal": "EZ4",
+  "provincia": "Buenos Aires",
+  "usuarioCompraOnline": {
+    "_id": "68b04d56f096b1549ef583a5",
+    "nombre": "Ezequiel",
+    "apellido": "Gonzales"
+  }
+}]
