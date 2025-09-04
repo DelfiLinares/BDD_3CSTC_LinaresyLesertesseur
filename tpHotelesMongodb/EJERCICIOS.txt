@@ -1,0 +1,25 @@
+1 y 2 en carpeta "INSERTS"
+3 - db.hotel.count()
+
+4 - db.hotel.find(
+    { servicios : 
+        { $in :
+            { idServicio: { $in : 1, 2, 3 } } 
+        }
+    } , 
+    { nombre:1 })
+
+5 - db.hotel.updateMany({}, { $set:{"ultima_actualizacion": "$$NOW" } } )
+6 - 
+
+db.promocion.find( { nombre:{ $in :{"jubilado", "jubilados"} } }, {"idHotel":1}) - para filtrar hoteles con promos p/jubilados
+7 - db.hotel.find({  }, {"nombre":1})
+8 - db.numerosUtiles.insertOne({} , { $set :{"numeroUtil": 0800911} })
+
+9 - db.hotel.find( {} , {"nombre": 1, "direccion": 1, "telefono": 1})
+10 - db.promocion.insertone()
+11 -
+12 -
+13 -
+14 -
+15 -
