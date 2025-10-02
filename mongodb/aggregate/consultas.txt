@@ -1,0 +1,112 @@
+------------- EJERCICIO 1 -------------
+
+db.cliente.aggregate( 
+    [ 
+        {
+            $group: {
+                _id: null,
+                promedio:{
+                    $avg: 
+                        "$edad"
+                    
+                }
+            }
+        }
+    ] 
+);
+
+------------- EJERCICIO 2 -------------
+
+db.cliente.aggregate(
+    [
+        {  
+            $unwind:"$compras"
+        },
+        {  
+            $unwind:"$compras.productos"
+        },
+        {  
+            $group:{
+                _id:"$compras.productos.idProducto",
+                unidadesOrdenadas: {
+                    $sum:"$compras.productos.cantidadComprada"
+                }
+            }
+        }
+    ]
+);
+
+------------- EJERCICIO 3 -------------
+
+db.cliente.aggregate(
+    [
+        {  
+            $unwind:"$compras"
+        },
+        {  
+            $unwind:"$compras.productos"
+        },
+        {  
+            $group:{
+                _id:"$dni",
+                totalGastado: {
+                    $sum:"$compras.productos.precio"
+                }
+            }
+        }
+    ]
+);
+
+------------- EJERCICIO 4 -------------
+
+db.cliente.aggregate(
+    [
+        {
+            $project:{nombre: 1, cantidadCompras: {$size: "$compras"} }
+        },
+        {
+            $match:{
+                "cantidadCompras": {$gt: 2}
+            }
+        }
+    ]
+);
+
+------------- EJERCICIO 5 -------------
+
+db.cliente.aggregate(
+    [
+        {
+            $project:{nombre: 1, cantidadCompras: {$size: "$compras"} }
+        },
+        {
+            $group: {
+                _id: null,
+                maximo:{
+                    $max: "cantidadCompras"                     
+                }
+           }   
+        }
+    ]
+);
+
+------------- EJERCICIO 6 -------------
+
+db.cliente.aggregate(
+    [
+        {  
+            $unwind:"$compras"
+        },
+        {  
+            $unwind:"$compras.productos"
+        },
+        {  
+            $group:{
+                _id:"$dni",
+                totalGastado: {
+                    $sum:"$compras.productos.precio"
+                }
+            }
+        }
+    ]
+) 

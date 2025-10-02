@@ -1,0 +1,219 @@
+{
+    "_id": 1,
+    "nombre": "Tito",
+    "apellido": "Melgarejo",
+    "dni":48567848,
+    "edad": 58,
+    "compras":[
+        {
+          "idCompra":1,
+          "fecha": "2025-12-12",
+          "productos":[
+            {
+                "idProducto": 1,
+                "descripcion": "leche",
+                "precio": 1500.0,
+                "cantidadComprada": 3
+            },
+            {
+                "idProducto": 2,
+                "descripcion": "Agua",
+                "precio": 100.0,
+                "cantidadComprada": 5
+            }
+          ]  
+        },
+        {
+          "idCompra":2,
+          "fecha": "2025-12-17",
+          "productos":[
+            {
+                "idProducto": 3,
+                "descripcion": "Arroz",
+                "precio": 11500.0,
+                "cantidadComprada": 7
+            },
+            {
+                "idProducto": 4,
+                "descripcion": "Banana",
+                "precio": 1200.0,
+                "cantidadComprada": 5
+            }
+          ]  
+        }
+    ]
+}
+
+----------------------------------------------------------------------------------------------
+
+{
+    "_id": 2,
+    "nombre": "Abril",
+    "apellido": "Tedesco",
+    "dni":48342787,
+    "edad": 17,
+    "compras":[
+        {
+          "idCompra":3,
+          "fecha": "2025-11-25",
+          "productos":[
+            {
+                "idProducto": 5,
+                "descripcion": "Huevo",
+                "precio": 7500.0,
+                "cantidadComprada": 5
+            },
+            {
+                "idProducto": 6,
+                "descripcion": "Chipa",
+                "precio": 12000.0,
+                "cantidadComprada": 50
+            }
+          ]  
+        },
+        {
+          "idCompra":4,
+          "fecha": "2025-10-17",
+          "productos":[
+            {
+                "idProducto": 7,
+                "descripcion": "Tomate",
+                "precio": 1500.0,
+                "cantidadComprada": 15
+            },
+            {
+                "idProducto": 8,
+                "descripcion": "Naranja",
+                "precio": 1200.0,
+                "cantidadComprada": 8
+            }
+          ]  
+        }
+    ]
+}
+----------------------------------------------------------------------------------------------
+
+{
+  "_id": 3,
+  "nombre": "Victoria",
+  "apellido": "Alfaro",
+  "dni": 48190123,
+  "edad": 32,
+  "compras": [
+    {
+      "idCompra": 5,
+      "fecha": "2025-11-25",
+      "productos": [
+        {
+          "idProducto": 9,
+          "descripcion": "Papa",
+          "precio": 7500.00,
+          "cantidadComprada": 14
+        },
+        {
+          "idProducto": 10,
+          "descripcion": "Gaseosa",
+          "precio": 12000.00,
+          "cantidadComprada": 25
+        }
+      ]
+    },
+    {
+      "idCompra": 6,
+      "fecha": "2025-09-17",
+      "productos": [
+        {
+          "idProducto": 11,
+          "descripcion": "Acondicionador",
+          "precio": 11500.0,
+          "cantidadComprada": 2
+        },
+        {
+          "idProducto": 12,
+          "descripcion": "Desodorante",
+          "precio": 1200.0,
+          "cantidadComprada": 1
+        }
+      ]
+    }
+  ]
+}
+
+----------------------------------------------------------------------------------------------
+
+{
+  "_id": 4,
+  "nombre": "Amalia",
+  "apellido": "Gillig",
+  "dni": 48932012,
+  "edad": 15,
+  "compras": [
+    {
+      "idCompra": 7,
+      "fecha": "2025-11-25",
+      "productos": [
+        {
+          "idProducto": 11,
+          "descripcion": "Palta",
+          "precio": 500.00,
+          "cantidadComprada": 24
+        }
+      ]
+    }
+  ]
+}
+
+----------------------------------------------------------------------------------------------
+
+{
+  "_id": 5,
+  "nombre": "Albano",
+  "apellido": "Alfaro",
+  "dni": 48113432,
+  "edad": 46,
+  "compras": [
+    {
+      "idCompra": 8,
+      "fecha": "2025-11-25",
+      "productos": [
+        {
+          "idProducto": 12,
+          "descripcion": "Manzana",
+          "precio": 7500.00,
+          "cantidadComprada": 14
+        },
+        {
+          "idProducto": 13,
+          "descripcion": "Milanesa",
+          "precio": 12000.00,
+          "cantidadComprada": 25
+        }
+      ]
+    },
+    {
+      "idCompra": 9,
+      "fecha": "2025-09-17",
+      "productos": [
+        {
+          "idProducto": 14,
+          "descripcion": "Empanada",
+          "precio": 11500.0,
+          "cantidadComprada": 2
+        },
+        {
+          "idProducto": 15,
+          "descripcion": "Guiso de lentejas",
+          "precio": 1200.0,
+          "cantidadComprada": 1
+        },
+        {
+          "idProducto": 16,
+          "descripcion": "Takis",
+          "precio": 1200.0,
+          "cantidadComprada": 1
+        },
+        
+      ]
+    }
+  ]
+}
