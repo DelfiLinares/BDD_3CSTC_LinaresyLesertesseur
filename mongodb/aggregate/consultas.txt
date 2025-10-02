@@ -102,11 +102,11 @@ db.cliente.aggregate(
         },
         {  
             $group:{
-                _id:"$dni",
-                totalGastado: {
-                    $sum:"$compras.productos.precio"
+                _id:"$compras.idCompra",
+                promedioUnidadesCompradas: {
+                    $avg:"$compras.productos.cantidadComprada"
                 }
             }
         }
     ]
-) 
+);
