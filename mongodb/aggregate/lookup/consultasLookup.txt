@@ -96,18 +96,16 @@ db.cliente.aggregate(
             $unwind:"$comprasPorCliente.productos"
         },
         {
+            $project:{nombre: 1, cantidadCompras: {$size: "$productos"} }
+        },
+        {
             $group:{
-                _id: "$comprasPorCliente.idCliente",
-                maximo: {
-                    $max:"$comprasPorCliente.productos.precio"
-                },
-                promedio: {
-                    $avg:"$comprasPorCliente.productos.precio"
-                },
-                minimo: {
-                    $min:"$comprasPorCliente.productos.precio"
+                _id: null,
+                maximo:{
+                    $max: "cantidadCompras"                     
                 }
             }
         }
     ]
 )
+
