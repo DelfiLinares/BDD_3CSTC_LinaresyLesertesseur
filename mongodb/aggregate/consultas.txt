@@ -5,7 +5,7 @@ db.cliente.aggregate(
         {
             $group: {
                 _id: null,
-                promedio:{
+                promedio:{      
                     $avg: 
                         "$edad"
                     
@@ -14,6 +14,8 @@ db.cliente.aggregate(
         }
     ] 
 );
+
+
 
 ------------- EJERCICIO 2 -------------
 
@@ -110,3 +112,4 @@ db.cliente.aggregate(
         }
     ]
 );
+

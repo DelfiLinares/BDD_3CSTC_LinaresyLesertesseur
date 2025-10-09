@@ -1,0 +1,23 @@
+{
+  "_id": 1,
+  "nombre": "Tito",
+  "apellido": "Melgarejo",
+  "dni": 48567848,
+  "edad": 58
+}
+
+{
+  "_id": 2,
+  "nombre": "Abril",
+  "apellido": "Tedesco",
+  "dni": 48342787,
+  "edad": 17
+}
+
+{
+  "_id": 5,
+  "nombre": "Delfina",
+  "apellido": "Linares",
+  "dni": 48113432,
+  "edad": 90
+}

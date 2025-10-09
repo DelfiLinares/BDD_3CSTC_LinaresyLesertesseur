@@ -1,0 +1,79 @@
+{
+  "idCompra": 1,
+  "idCliente": 5,
+  "fecha": "2025-12-12",
+  "productos": [
+    {
+      "idProducto": 1,
+      "descripcion": "leche",
+      "precio": 1500,
+      "cantidadComprada": 3
+    },
+    {
+      "idProducto": 2,
+      "descripcion": "Agua",
+      "precio": 100,
+      "cantidadComprada": 5
+    }
+  ]
+}
+
+{
+    "idCompra": 4,
+    "idCliente": 5,
+    "fecha": "2025-10-17",
+    "productos": [
+    {
+      "idProducto": 7,
+      "descripcion": "Tomate",
+      "precio": 1500,
+      "cantidadComprada": 15
+    },
+    {
+      "idProducto": 8,
+      "descripcion": "Naranja",
+      "precio": 1200,
+      "cantidadComprada": 8
+    }
+  ]
+}
+
+{
+  "idCompra": 4,
+  "idCliente": 1,
+  "fecha": "2025-10-17",
+  "productos": [
+    {
+      "idProducto": 7,
+      "descripcion": "Tomate",
+      "precio": 1500,
+      "cantidadComprada": 15
+    },
+    {
+      "idProducto": 8,
+      "descripcion": "Naranja",
+      "precio": 1200,
+      "cantidadComprada": 8
+    }
+  ]
+}
+
+{
+  "idCompra": 5,
+  "idCliente": 2,
+  "fecha": "2025-11-25",
+  "productos": [
+    {
+      "idProducto": 9,
+      "descripcion": "Papa",
+      "precio": 7500,
+      "cantidadComprada": 14
+    },
+    {
+      "idProducto": 10,
+      "descripcion": "Gaseosa",
+      "precio": 12000,
+      "cantidadComprada": 25
+    }
+  ]
+}

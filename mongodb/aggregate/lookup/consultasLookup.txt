@@ -1,0 +1,113 @@
+------------------ EJERCICIO 1 ------------------
+
+db.cliente.aggregate(
+    [
+        {
+            $lookup:{
+                from:"compra", 
+                localField: "_id",
+                foreignField: "idCliente",
+                as: "comprasPorCliente"
+            }
+        }
+    ]
+);
+
+------------------ EJERCICIO 2 ------------------
+
+db.cliente.aggregate(
+    [
+        {
+            $lookup:{
+                from:"compra", 
+                localField: "_id",
+                foreignField: "idCliente",
+                as: "comprasPorCliente"
+            }
+        },
+        {  
+            $unwind:"$comprasPorCliente"
+        },
+        {  
+            $unwind:"$comprasPorCliente.productos"
+        },
+        {
+            $group:{
+                _id: "$comprasPorCliente.idCliente",
+                total: {
+                    $sum:"$comprasPorCliente.productos.precio"
+                }
+            }
+        }
+    ]
+)
+
+------------------ EJERCICIO 3 ------------------
+
+db.cliente.aggregate(
+    [
+        {
+            $lookup:{
+                from:"compra", 
+                localField: "_id",
+                foreignField: "idCliente",
+                as: "comprasPorCliente"
+            }
+        },
+        {  
+            $unwind:"$comprasPorCliente"
+        },
+        {  
+            $unwind:"$comprasPorCliente.productos"
+        },
+        {
+            $group:{
+                _id: "$comprasPorCliente.idCliente",
+                maximo: {
+                    $max:"$comprasPorCliente.productos.precio"
+                },
+                promedio: {
+                    $avg:"$comprasPorCliente.productos.precio"
+                },
+                minimo: {
+                    $min:"$comprasPorCliente.productos.precio"
+                }
+            }
+        }
+    ]
+)
+
+------------------ EJERCICIO 4 ------------------
+
+db.cliente.aggregate(
+    [
+        {
+            $lookup:{
+                from:"compra", 
+                localField: "_id",
+                foreignField: "idCliente",
+                as: "comprasPorCliente"
+            }
+        },
+        {  
+            $unwind:"$comprasPorCliente"
+        },
+        {  
+            $unwind:"$comprasPorCliente.productos"
+        },
+        {
+            $group:{
+                _id: "$comprasPorCliente.idCliente",
+                maximo: {
+                    $max:"$comprasPorCliente.productos.precio"
+                },
+                promedio: {
+                    $avg:"$comprasPorCliente.productos.precio"
+                },
+                minimo: {
+                    $min:"$comprasPorCliente.productos.precio"
+                }
+            }
+        }
+    ]
+)
